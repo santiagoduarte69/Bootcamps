@@ -49,16 +49,40 @@
 				{
 					"name": "eliminar un bootcamp",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/bootcamps/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bootcamps",
+								"5"
+							]
+						}
 					},
 					"response": []
 				},
 				{
 					"name": "actualizar un bootcamp",
 					"request": {
-						"method": "GET",
-						"header": []
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "localhost:8000/api/bootcamps/5",
+							"host": [
+								"localhost"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"bootcamps",
+								"5"
+							]
+						}
 					},
 					"response": []
 				}
