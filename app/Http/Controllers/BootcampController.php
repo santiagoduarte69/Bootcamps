@@ -24,7 +24,7 @@ class BootcampController extends Controller
      */
     public function store(Request $request)
     {
-        echo "aqui van a mostrarse los bootcamps";
+        echo "aqui va a registrar el bootcamp";
     }
 
     /**

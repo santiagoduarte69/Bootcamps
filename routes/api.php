@@ -16,7 +16,7 @@ use App\Http\Controllers\BootcampController;
 */
 //Primera ruta REST
 Route::get('/prueba',function(){
-    echo "holaxd";
+    echo "Hola";
 });
 
 //vincular el controlador bootcamp a sus respectivas rutas
