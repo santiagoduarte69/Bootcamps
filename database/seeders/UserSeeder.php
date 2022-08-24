@@ -18,8 +18,8 @@ class UserSeeder extends Seeder
     {
          //construir un usuario con email, username y password
          $u = new User();
-         $u->name = "elshaman";
-         $u->email = "elhaman@gmail.com";
+         $u->name = "rodrigo";
+         $u->email = "baquero365@gmail.com";
          $u->password = Hash::make("123456");
          $u->save();
     }

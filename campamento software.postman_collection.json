@@ -14,14 +14,15 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "localhost:8000/api/bootcamps",
+							"raw": "localhost:8000/api/bootcamps/",
 							"host": [
 								"localhost"
 							],
 							"port": "8000",
 							"path": [
 								"api",
-								"bootcamps"
+								"bootcamps",
+								""
 							]
 						}
 					},
@@ -31,7 +32,17 @@
 					"name": "crear nuevo bootcamp",
 					"request": {
 						"method": "POST",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n        \"name\" : \"Rubi Intermediate level\",\r\n        \"website\" : \"http:/rubi.com\",\r\n        \"phone\" : \"(222) - 151489\",\r\n        \"description\" : \"Bootcamp for Rubi Learning \",\r\n        \"user_id\" : 1,\r\n        \"average_rating\" : 7.0 ,\r\n        \"average_cost\" : 3000 \r\n    } "
+						},
 						"url": {
 							"raw": "localhost:8000/api/bootcamps",
 							"host": [
@@ -50,7 +61,13 @@
 					"name": "eliminar un bootcamp",
 					"request": {
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
 						"url": {
 							"raw": "localhost:8000/api/bootcamps/5",
 							"host": [
@@ -70,7 +87,17 @@
 					"name": "actualizar un bootcamp",
 					"request": {
 						"method": "PUT",
-						"header": [],
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"average_cost\" : 2000\r\n}"
+						},
 						"url": {
 							"raw": "localhost:8000/api/bootcamps/5",
 							"host": [
